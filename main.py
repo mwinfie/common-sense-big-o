@@ -59,7 +59,7 @@ def main():
 
     # Initialize graph based on number of functions to test
     fig, axs = plt.subplots( len(functions), 2, figsize=(10, 4))
-    fig.suptitle('Theoretical vs. Emperical Performance')
+    fig.suptitle('Theoretical vs. Empirical Performance')
 
     for function in functions:
 
