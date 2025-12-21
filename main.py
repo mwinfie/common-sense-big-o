@@ -1,4 +1,4 @@
-#!/bin/usr/env python3
+#!/usr/bin/env python3
 # Based on information in A Common-Sense Guide to Data Structures and Algorithms, Second Edition by Jay Wengrow.
 # This script runs empirical tests against functions to calculate their time and space complexity in terms of Big O.
 # Test results are plotted on a graph along with the theoretical complexity to show how well the two align.
