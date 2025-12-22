@@ -4,7 +4,7 @@ A Python-based empirical testing framework for analyzing and visualizing the tim
 
 ## Background
 
-This project was developed as my capstone project for the [OK Coders](https://www.techlahoma.org/ok-coders/) Python Module 2 course covering content from *Automate the Boring Stuff with Python* by Al Sweigart. I built this project to compare theoretical complexity to observed performance. This project provides visual confirmation that algorithmic implementations behave according to their expected Big O classifications.
+This project was developed as my capstone project for the [OK Coders](https://www.techlahoma.org/ok-coders/) Python Module 2 course covering content from [*Automate the Boring Stuff with Python* by Al Sweigart](https://automatetheboringstuff.com/). I built this project to compare theoretical complexity to observed performance. This project provides visual confirmation that algorithmic implementations behave according to their expected Big O classifications.
 
 ## Features
 
