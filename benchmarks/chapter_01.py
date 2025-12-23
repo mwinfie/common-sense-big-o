@@ -48,10 +48,11 @@ class LinearSearch(BenchmarkStrategy):
     def setup(self, n):
         # Create a list n long with one unique item inserted at a random index to search for
         self.data_list = ["hello"] * n
-        self.data_list.insert(random.randint(0, n), "world")
+        self.search_value = "world"
+        self.data_list.insert(random.randint(0, n), self.search_value)
 
     def run_algorithm(self):
-        linear_search(self.data_list, "world")
+        linear_search(self.data_list, self.search_value)
 
     @property
     def time_complexity(self):
