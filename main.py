@@ -7,6 +7,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import time
 import tracemalloc
+from multiprocessing import Pool
 from benchmarks.chapter_01 import PrintNumbersVersionOneBenchmark, PrintNumbersVersionTwoBenchmark, LinearSearch
 from benchmarks.chapter_04 import BubbleSort
 
@@ -30,14 +31,14 @@ def run_benchmark(benchmark_obj, n):
 
 def main():
     # List complexity sizes for benchmarks
-    n_sizes = np.logspace(5, 6, 10, dtype=int)
+    n_sizes = np.logspace(2, 5, 10, dtype=int)
 
     # List tests to run
     tests = [
             # PrintNumbersVersionOneBenchmark(),
-            PrintNumbersVersionTwoBenchmark(),
-            LinearSearch()
-            # BubbleSort()
+            # PrintNumbersVersionTwoBenchmark(),
+            # LinearSearch(),
+            BubbleSort()
         ]
 
     # Initialize graph based on number of tests to run
@@ -50,9 +51,11 @@ def main():
         y_time = []
         y_space = []
 
-        # Run Benchmarks
-        for n in n_sizes:
-            t, s = run_benchmark(test, n)
+        # Run Benchmarks in parallel
+        with Pool() as pool:
+            results = pool.starmap(run_benchmark, [(test, n) for n in n_sizes])
+        
+        for t, s in results:
             y_time.append(t)
             y_space.append(s)
 
