@@ -9,6 +9,7 @@ import time
 import tracemalloc
 from multiprocessing import Pool
 from benchmarks.chapter_01 import PrintNumbersVersionOneBenchmark, PrintNumbersVersionTwoBenchmark, LinearSearch
+from benchmarks.chapter_02 import BinarySearch
 from benchmarks.chapter_04 import BubbleSort
 
 def run_benchmark(benchmark_obj, n):
@@ -31,14 +32,15 @@ def run_benchmark(benchmark_obj, n):
 
 def main():
     # List complexity sizes for benchmarks
-    n_sizes = np.logspace(2, 5, 10, dtype=int)
+    n_sizes = np.logspace(4, 8, 50, dtype=int)
 
     # List tests to run
     tests = [
             # PrintNumbersVersionOneBenchmark(),
             # PrintNumbersVersionTwoBenchmark(),
             # LinearSearch(),
-            BubbleSort()
+            # BubbleSort(),
+            BinarySearch()
         ]
 
     # Initialize graph based on number of tests to run

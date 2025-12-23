@@ -134,9 +134,6 @@ n_sizes = np.logspace(5, 6, 10, dtype=int)  # 10 values from 10^5 to 10^6
 
 ### Algorithms To Implement
 
-#### Chapter 2: Why Algorithms Matter
-- [ ] Binary search
-
 #### Chapter 5: Optimizing Code with and wiBig O
 - [ ] Selection Sort
 
