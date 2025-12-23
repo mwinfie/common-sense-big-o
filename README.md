@@ -130,6 +130,7 @@ n_sizes = np.logspace(5, 6, 10, dtype=int)  # 10 values from 10^5 to 10^6
 - [ ] Implement algorithms from remaining book chapters
 - [ ] Add warmup runs to account for Python interpreter optimization
 - [ ] Create interactive terminal UI for algorithm and input size selection
+- [ ] Improve test result accuracy (binary search is so fast that small variance in test results due to external factors can cause outliers)
 - [ ] Switch from venv to uv
 
 ### Algorithms To Implement
