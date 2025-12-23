@@ -1,5 +1,6 @@
 from .benchmark_interface import BenchmarkStrategy
 from algorithms.chapter_04 import bubble_sort
+import random
 
 class BubbleSort(BenchmarkStrategy):
     @property
@@ -7,7 +8,7 @@ class BubbleSort(BenchmarkStrategy):
         return bubble_sort.__name__
 
     def setup(self, n):
-        self.data_list = list(range(n, 0, -1))
+        self.data_list = random.sample(range(1, n * 2), n)
 
     def run_algorithm(self):
         bubble_sort(self.data_list)
