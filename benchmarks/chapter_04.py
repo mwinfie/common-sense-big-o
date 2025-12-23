@@ -10,7 +10,6 @@ class BubbleSort(BenchmarkStrategy):
         self.data_list = list(range(n, 0, -1))
 
     def run_algorithm(self):
-        print(self.data_list)
         bubble_sort(self.data_list)
 
     @property
