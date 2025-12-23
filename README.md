@@ -128,7 +128,6 @@ n_sizes = np.logspace(5, 6, 10, dtype=int)  # 10 values from 10^5 to 10^6
 ### Planned Features
 
 - [ ] Implement algorithms from remaining book chapters
-- [ ] Add multiprocessing support to parallelize benchmark execution
 - [ ] Add warmup runs to account for Python interpreter optimization
 - [ ] Create interactive terminal UI for algorithm and input size selection
 - [ ] Switch from venv to uv
