@@ -11,6 +11,7 @@ from multiprocessing import Pool
 from benchmarks.chapter_01 import PrintNumbersVersionOneBenchmark, PrintNumbersVersionTwoBenchmark, LinearSearch
 from benchmarks.chapter_02 import BinarySearch
 from benchmarks.chapter_04 import BubbleSort
+from benchmarks.chapter_05 import SelectionSort
 
 def run_benchmark(benchmark_obj, n):
     # Test only Time (High precision, no memory tracking overhead)
@@ -32,15 +33,16 @@ def run_benchmark(benchmark_obj, n):
 
 def main():
     # List complexity sizes for benchmarks
-    n_sizes = np.logspace(4, 8, 50, dtype=int)
+    n_sizes = np.logspace(2, 5, 20, dtype=int)
 
     # List tests to run
     tests = [
             # PrintNumbersVersionOneBenchmark(),
             # PrintNumbersVersionTwoBenchmark(),
-            # LinearSearch(),
-            # BubbleSort(),
-            BinarySearch()
+            # LinearSearch()
+            # BubbleSort()
+            # BinarySearch(),
+            SelectionSort()
         ]
 
     # Initialize graph based on number of tests to run
