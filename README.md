@@ -120,7 +120,7 @@ Modify the `n_sizes` configuration in `main.py` to test different input ranges:
 
 ### Binary Search Performance Analysis
 
-![Binary Search Time Complexity](docs/screenshots/binary_sort.png)
+![Binary Search Time Complexity](docs/screenshots/binary_search.png)
 *Figure 2: Empirical runtime (blue scatter) closely follows theoretical O(log N) curve (red dashed line). Memory usage validates expected O(1) constant space complexity*
 
 ### Bubble Sort Performance Analysis
