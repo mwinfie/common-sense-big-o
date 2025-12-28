@@ -113,10 +113,27 @@ Modify the `n_sizes` configuration in `main.py` to test different input ranges:
 
 ## Example Output
 
+### Linear Search Performance Analysis
+
+![Linear Search Time Complexity](docs/screenshots/linear_sort.png)
+*Figure 1: Empirical runtime (blue scatter) closely follows theoretical O(N) curve (red dashed line). Memory usage validates expected O(1) constant space complexity*
+
+### Binary Search Performance Analysis
+
+![Binary Search Time Complexity](docs/screenshots/binary_sort.png)
+*Figure 2: Empirical runtime (blue scatter) closely follows theoretical O(log N) curve (red dashed line). Memory usage validates expected O(1) constant space complexity*
+
 ### Bubble Sort Performance Analysis
 
 ![Bubble Sort Time Complexity](docs/screenshots/bubble_sort.png)
-*Figure 1: Empirical runtime (blue scatter) closely follows theoretical O(N²) curve (red dashed line). Memory usage validates expected O(1) constant space complexity*
+*Figure 3: Empirical runtime (blue scatter) closely follows theoretical O(N²) curve (red dashed line). Memory usage validates expected O(1) constant space complexity*
+
+### Selection Sort Performance Analysis
+
+![Selection Sort Time Complexity](docs/screenshots/selection_sort.png)
+*Figure 4: Empirical runtime (blue scatter) closely follows theoretical O(N²) curve (red dashed line). Memory usage validates expected O(1) constant space complexity*
+
+
 
 ## Technologies Used
 
