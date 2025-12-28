@@ -90,12 +90,15 @@ python3 main.py
 Edit the `tests` list in `main.py` to enable/disable specific benchmarks:
 
 ```python
-tests = [
-    # PrintNumbersVersionOneBenchmark(),
-    # PrintNumbersVersionTwoBenchmark(),
-    # LinearSearch(),
-    BubbleSort()
-]
+# List tests to run:
+#   PrintNumbersVersionOneBenchmark()
+#   PrintNumbersVersionTwoBenchmark()
+#   LinearSearch()
+#   BubbleSort()
+#   BinarySearch()
+#   SelectionSort()
+
+test = SelectionSort()
 ```
 
 Uncomment lines to activate additional benchmarks.
@@ -105,7 +108,7 @@ Uncomment lines to activate additional benchmarks.
 Modify the `n_sizes` configuration in `main.py` to test different input ranges:
 
 ```python
-n_sizes = np.logspace(5, 6, 10, dtype=int)  # 10 values from 10^5 to 10^6
+    n_sizes = np.logspace(2, 5, 20, dtype=int)  # 10 values from 10^2 to 10^5
 ```
 
 ## Example Output

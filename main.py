@@ -31,20 +31,18 @@ def run_benchmark(benchmark_obj, n):
 
     return duration, peak_memory
 
-def get_function():
-    pass
-
 def main():
     # List complexity sizes for benchmarks
     n_sizes = np.logspace(2, 5, 20, dtype=int)
 
     # List tests to run:
-    #   PrintNumbersVersionOneBenchmark(),
-    #   PrintNumbersVersionTwoBenchmark(),
+    #   PrintNumbersVersionOneBenchmark()
+    #   PrintNumbersVersionTwoBenchmark()
     #   LinearSearch()
     #   BubbleSort()
-    #   BinarySearch(),
+    #   BinarySearch()
     #   SelectionSort()
+
     test = SelectionSort()
 
     # Initialize graph based on number of tests to run
