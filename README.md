@@ -21,12 +21,16 @@ common-sense-big-o/
 ├── main.py                      # Entry point and benchmarking orchestration
 ├── algorithms/                  # Algorithm implementations by chapter
 │   ├── chapter_01.py           # Linear search, iteration patterns
+|   ├── chapter_02.py           # Binary search
 │   ├── chapter_04.py           # Bubble sort
+|   ├── chapter_05.py           # Selection sort
 │   └── ...
 ├── benchmarks/                  # Benchmark test harnesses
 │   ├── benchmark_interface.py  # Abstract base class for all benchmarks
 │   ├── chapter_01.py           # Chapter 1 algorithm benchmarks
+|   ├── chapter_02.py           # Chapter 2 algorithm benchmarks
 │   ├── chapter_04.py           # Chapter 4 algorithm benchmarks
+|   ├── chapter_05.py           # Chapter 5 algorithm benchmarks
 │   └── ...
 └── env/                        # Python virtual environment
 ```
