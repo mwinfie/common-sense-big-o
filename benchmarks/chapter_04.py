@@ -1,6 +1,7 @@
+import random
 from .benchmark_interface import BenchmarkStrategy
 from algorithms.chapter_04 import bubble_sort
-import random
+
 
 class BubbleSort(BenchmarkStrategy):
     @property

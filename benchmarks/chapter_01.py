@@ -1,6 +1,7 @@
-from .benchmark_interface import BenchmarkStrategy
-from algorithms.chapter_01 import print_numbers_version_one, print_numbers_version_two, linear_search
 import random
+from .benchmark_interface import BenchmarkStrategy
+from algorithms.chapter_01 import linear_search, print_numbers_version_one, print_numbers_version_two
+
 
 class PrintNumbersVersionOneBenchmark(BenchmarkStrategy):
     @property

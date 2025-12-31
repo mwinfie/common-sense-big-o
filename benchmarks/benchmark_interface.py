@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+
 class BenchmarkStrategy(ABC):
     def __init__(self):
         self.input_data = None
@@ -11,7 +12,7 @@ class BenchmarkStrategy(ABC):
     @abstractmethod
     def run_algorithm(self):
         pass
-        
+
     @property
     @abstractmethod
     def name(self):
