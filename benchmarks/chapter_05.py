@@ -1,6 +1,7 @@
+import random
 from .benchmark_interface import BenchmarkStrategy
 from algorithms.chapter_05 import selection_sort
-import random
+
 
 class SelectionSort(BenchmarkStrategy):
     @property

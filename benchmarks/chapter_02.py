@@ -1,7 +1,8 @@
-from .benchmark_interface import BenchmarkStrategy
-from algorithms.chapter_02 import binary_search
 import numpy as np
 import random
+from .benchmark_interface import BenchmarkStrategy
+from algorithms.chapter_02 import binary_search
+
 
 class BinarySearch(BenchmarkStrategy):
     @property
